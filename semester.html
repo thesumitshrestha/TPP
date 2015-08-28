@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TPP</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="semantic/semantic.css">
+  <link rel="stylesheet" type="text/css" href="css/homepage.css">
+   <link rel="stylesheet" type="text/css" href="iconfonts/flaticon.css">
+  <script src="semantic/semantic.js"></script>
+  <script src="js/homepage.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".close").click(function(){
+		$("#myAlert").alert('close');
+	});
+});  
+
+$(function () {
+    $('a[href="#search"]').on('click', function(event) {
+        event.preventDefault();
+        $('#search').addClass('open');
+        $('#search > form > input[type="search"]').focus();
+    });
+    
+    $('#search, #search button.close').on('click keyup', function(event) {
+        if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+            $(this).removeClass('open');
+        }
+    });
+    
+    
+    //Do not include! This prevents the form from submitting for DEMO purposes only!
+    $('form').submit(function(event) {
+        event.preventDefault();
+        return false;
+    })
+});
+</script>
+<style type="text/css">
+ .footer {
+	background:#1C4B6F;
+	height:50px;
+	position:fixed;
+	bottom:0;
+	left:0;
+	clear: both;
+    color: white;
+    font-size: 16px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 12px 0;
+    text-align: center;
+    width: 100%;
+}
+	#paginate{
+		margin:0px auto;
+		width:300px;
+	}
+img{
+border-radius: 50%;
+}
+span{
+	font-family: fantasy;
+	color:black;
+}
+.label-primary{
+ background-color: rgba(51, 122, 183, 0);
+ color: black;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+						<button type="button" class="btn btn-primary btn-md" style="margin-top:3px;">Home</button>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Batch <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#"><b>2015</b></a>
+                            </li>
+                                <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#"><b>2016</b></a>
+                            </li>
+                                <li role="separator" class="divider"></li>
+
+                            <li>
+                                <a href="#"><b>2017</b></a>
+                            </li>
+                                <li role="separator" class="divider"></li>
+
+                            <li>
+                                <a href="#"><b>2018</b></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+    			<form class="navbar-form navbar-right" role="search">
+        			<div class="form-group">
+          				<input type="text" class="form-control" placeholder="Student Name">
+          				  <button style="margin-right: -46px;margin-top: 5px;" type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+        			</div>
+      			</form>
+				</li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	<!--Footer to be done by Pratik
+	<div class="footer">
+				© 2015, Deerwalk Institute of Technology. All rights reserved.					   		
+	</div>
+	r-->
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 
+    })
+    </script>
+</body>
+</html>
+
+

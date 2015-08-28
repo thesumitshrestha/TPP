@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+        <title>Students Profile</title>
+        <link rel="shortcut icon" href="img/deerwalk.png" type="image/png"/>
+        <link rel="stylesheet" href="Style.css" type="text/css"/>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="generator" content="Bootply" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/bootstrap.css" rel="stylesheet">
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link href="css/styles.css" rel="stylesheet">
+	<style>
+		#background{
+		    background-image: url("img/back.jpg");
+			position: fixed;
+			filter: blur(100px);  	  
+		}
+.footer {
+	background:rgba(28, 75, 111, 0);
+	height:50px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	clear: both;
+    color: white;
+    font-size: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 12px 0;
+    text-align: center;
+    margin-left:61px;
+}
+	</style>
+</head>
+
+<body id="background">
+   <ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	 <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('images/1.jpg');"></div>
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('images/2.png');"></div>
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('images/3.jpg');"></div>
+                <div class="carousel-caption">
+                </div>
+            </div>
+             <div class="item">
+                <div class="fill" style="background-image:url('images/1.jpg');"></div>
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+	<div class="container">
+
+        <div class="card card-container">
+            <img src="img/dear.PNG" class="img-responsive"> 
+            <h1 id="profile-name" class="profile-name-card" style="color:white">Login</h1>
+            <form class="form-signin">
+                <span id="reauth-email" class="reauth-email"></span>
+                <input type="text" id="inputEmail" class="form-control" placeholder="Username" required autofocus>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <div id="remember" class="checkbox" style="color:white">
+                    <label>
+                        <input type="checkbox" value="remember-me" class="large"> Remember me
+                    </label>
+                </div>
+                <br>
+                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+            </form><!-- /form -->
+  
+            <a href="#" class="forgot-password">
+                Forgot the password?
+            </a>
+        </div><!-- /card-container -->
+       
+    </div><!-- /container -->
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+     <div class="footer">
+				© 2015, Deerwalk Institute of Technology. All rights reserved.					   		
+	</div>
+</body>
+</html>
